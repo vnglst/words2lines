@@ -1,0 +1,16 @@
+/* app css stylesheet */
+
+h1 {
+  text-align: center;
+}
+
+.title {
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.version {
+  font-size: 8px;
+
+}
+

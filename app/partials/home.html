@@ -1,0 +1,64 @@
+<form>
+	<div class="row">
+		<div class="small-3 columns">		  
+		  <label>Words
+		    <input type="number" placeholder="2000" ng-model="words" ng-change="wordsChange()" />
+		  </label> 
+		</div>
+
+		<div class="small-1 columns">
+		<p><br/>=</p>
+		</div>
+		
+		<div class="small-4 columns">
+		  <label>Characters
+			<input type="number" placeholder="10000" ng-model="chars" ng-change="charsChange()" />
+		  </label>
+		</div>
+
+		<div class="small-1 columns">
+		<p><br/>=</p>
+		</div>
+
+		<div class="small-3 columns">
+			<label>Norm lines (55 chars)
+				<input type="number" placeholder="400" ng-model="lines" ng-change="linesChange()" />
+			</label>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="small-4 columns">
+			<label>Source language
+			<select name="Source language" 
+				ng-model="language"
+				ng-options="l.name for l in wordsPerLanguage"
+				ng-change="selectLanguage(language.wordsPerLine)" />
+			</select>
+			</label>
+		</div>
+
+		<div class="small-1 columns">
+		<p><br/>=</p>
+		</div>
+
+		<div class="small-3 columns">
+			<label>Words per line
+			<input type="number" placeholder="8" 
+				ng-model="wordsPerLine"
+				ng-change="wordsPerLineChange()" />
+			</label>
+		</div>
+
+		<div class="small-1 columns">
+		<p><br/>=</p>
+		</div>
+
+		<div class="small-3 columns">
+			<label>Characters per word
+				<input type="number" placeholder="6.8" 
+					ng-model="charsPerWord"
+					ng-change="charsPerWordChange()" />
+			</label>
+		</div>
+	</div>
+</form>
